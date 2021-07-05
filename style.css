@@ -14,6 +14,16 @@ footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video 
 {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:top; background:none;font-family: 'Ubuntu', sans-serif;font-weight: 300;}
 
+
+main {
+    width: 100vw;
+}
+
+main .carousel {
+margin: 40px;
+}
+
+
 h1 {
     font-size: 2em;
     font-weight: 700;
@@ -21,7 +31,6 @@ h1 {
 
 header {
     background-color:darkcyan;
-    width: calc(100% - 80px);
     padding: 40px;
     display: flex;
     flex-direction: row;
@@ -37,7 +46,7 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-    #logo {
+    .Logo {
         text-align: center;
     }
 }
@@ -48,9 +57,16 @@ header {
     }
 }
 
-#logo {
+.Logo {
     color:white;
     font-weight: 600;
+    transition: 0.3s;
+}
+
+.Logo:hover {
+    text-decoration: none;
+    color:indigo;
+    transition: 0.3s;
 }
 
 nav {
@@ -63,10 +79,14 @@ nav a {
 }
 
 nav a:hover {
+    text-decoration: none;
     color:indigo;
     transition: 0.3s;
 }
 
+a {
+    text-decoration: none;
+}
 
 section {
     background-size: 100%;
@@ -78,11 +98,6 @@ section {
     
 }
 
-/*@media only screen and (max-width: 600px) {
-    section {
-        background-size: ;
-    }
-}*/
 
 article {
     width: calc(50% - 110px);
@@ -93,7 +108,6 @@ article {
 footer {
     background-color: grey;
     padding: 40px;
-    width: calc(100% - 80px);
     color: white;
     font-weight: 300;
     font-size: 0.8em;
@@ -105,6 +119,38 @@ footer {
     }
 }
 
-.parrot {
-    background-image: url(./assets/parrot.jpg);
+.frontpage {
+    /*bootstrap*/
+    display: flex;
+    justify-content: center;
+}
+
+nav .active {
+    font-style: oblique !important;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.boxes {
+    background-color: rgb(236, 236, 234);
+}
+
+img {
+    position:relative;
+}
+
+#platzhalter {
+    max-width: 70%;
+}
+
+.galerie {
+    max-width: 100%;
 }
