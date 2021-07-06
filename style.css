@@ -163,3 +163,10 @@ img {
 .schwarz {
     color: black;
 }
+
+
+.carousel-control-next, .carousel-control-prev {
+    transition:  opacity .20s ease;
+    transition: 0.1s;
+    width: 5%;
+}
